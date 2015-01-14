@@ -1,3 +1,10 @@
+#This project contains a mockup layout of savings-multiplied created with Semantic.ui
+##Authors: Jason Gresalfi, Jacob Lewis, Ayumi Bennett
+*************
+
+
+
+
 ```json
 "devDependencies": {
   "grunt": "^0.4.5",
