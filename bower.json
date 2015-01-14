@@ -1,0 +1,12 @@
+{
+  "name": "savings-multiplied-semantic-ui",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jgresalfi/savings-multiplied-semantic-ui",
+  "authors": [
+    "Jason, Jacob, Ayumi"
+  ],
+  "description": "This is the savings-multiplied layout proj with semantic-ui",
+  "license": "MIT",
+  "private": true
+}
+
