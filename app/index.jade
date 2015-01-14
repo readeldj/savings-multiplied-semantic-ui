@@ -6,14 +6,27 @@ html(lang="en-US")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title My Title
     link(rel="stylesheet" href="css/main.css")
-    link(rel="stylesheet" href="/dist/semantic.min.css")
+    link(rel="stylesheet" href="vendor/semantic/dist/semantic.min.css")
 
   body
-    // [if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]
+    
+    div(class="ui grid")
+      
+      div(class="two wide column")
+        
 
-    .container
-      img(src="img/NSS-logo-primary.svg", alt="NSS Logo", title="Nashville Software School")
-      h1 Hello Semantic-UI Friends!
+      div(class="twelve wide column") 
+        div.main_content
+          h1 Savings Multiplied!
+          div.baby_pic_set
+            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/twins.jpg")
+            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/triplets.jpg")
+            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/quads.jpg")
+      
+      div(class="two wide column")
+        
+      
+
 
     script(src="js/main.js")
     script(src="/dist/semantic.min.js")
