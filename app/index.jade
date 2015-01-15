@@ -7,6 +7,7 @@ html(lang="en-US")
     title My Title
     link(rel="stylesheet" href="vendor/semantic/dist/semantic.min.css")
     link(rel="stylesheet" href="css/main.css")
+    link(href='http://fonts.googleapis.com/css?family=Neuton:400,700,800' rel='stylesheet' type='text/css')
   body
     div(class="ui grid")
       div(class="twelve column row top_row") 
@@ -38,13 +39,22 @@ html(lang="en-US")
         div(class="two wide column")
         div(class="twelve wide column")     
           div.main_content_body
-            div.main_content_text
-              p We're making one aspect of life easier for parents of multiples
-              p Buying and selling gently used sets of clothes
-            div.baby_pic_set
-              img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/twins.jpg")
-              img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/triplets.jpg")
-              img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/quads.jpg")
+            div(class="ui grid")
+              div(class="eight wide column")
+                div(class="content_text_blurbs")
+                div(class="main_content_life_easier")
+                  p We're making one aspect of life easier for parents of multiples
+                div(class="main_content_buy_sell")
+                  p Buying and selling gently used sets of clothes!
+                div(class="shop_now_img")
+                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/left_2_shop_now.png")
+                div(class="tree_image")
+                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png")
+              div(class="eight wide column")
+                div.baby_pic_set
+                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/twins.jpg")
+                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/triplets.jpg")
+                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/quads.jpg")
             div.main_content_footer
               div.main_content_footer-img
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/facebook_callout.png")
