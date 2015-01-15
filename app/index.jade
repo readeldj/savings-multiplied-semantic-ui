@@ -9,11 +9,16 @@ html(lang="en-US")
     link(rel="stylesheet" href="css/main.css")
     link(href='http://fonts.googleapis.com/css?family=Neuton:400,700,800' rel='stylesheet' type='text/css')
   body
+    
     div(class="ui grid")
       div(class="twelve column row top_row") 
         div(class="two wide column")      
         div(class="twelve wide column") 
           div(class="main_content group")
+            div(class="ui breadcrumb" id="sign-in")
+              a(class="section") sign in
+              .divider | 
+              a(class="section") sign up
             div(class="button-container")
               a(class="ui teal button") About
               a(class="ui green button") Contact
