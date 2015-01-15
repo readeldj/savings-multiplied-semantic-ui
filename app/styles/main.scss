@@ -1,7 +1,7 @@
-
 /* top level styling */
-.ui.grid {
-	background-color: #d6f1f0;
+
+html {
+	background-color: #75CBD2;
 }
  body {
  	font-family: "Neuton", serif;
@@ -11,10 +11,20 @@
 	margin: 0;
 	padding: 0;
 }
+.twelve.column.row.top_row {
+	background-color: #D3EFEE;
+}
+.twelve.column.row.middle_row {
+	background-color: #75CBD2;
+}
+
 /* header level styling */
 .logo {
+	position: relative;
+	top: -4px;
+	left: 0;
 	width: 40%;
-	float: left;
+	margin-top: -6%;
 }
 
 .group:after {
@@ -24,22 +34,32 @@
 }
 
 .tagline {
+	position: relative;
+	left: 16px;
+	bottom: 0px;
 	width: 50%;
-	padding-top: 11%;
+	padding-bottom: 3%;
 }
 
 .button-container {
+	position: relative;
+	top: 62px;
+	right: 49px;
 	margin-left: 55%;
+	padding-bottom: 0%;
 }
 
-.ui.black.button,
-.ui.yellow.button,
+.ui.teal.button,
 .ui.green.button,
-.ui.blue.button {
+.ui.purple.button,
+.ui.pink.button {
 	display: inline-block;
 	margin-bottom: -23%;
 	padding-left: 10%;
-	border-radius: 35%;
+	border-radius: 20px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* nav bar styling */
@@ -82,18 +102,55 @@ h2 {
 
 
 /* body level styling */
+
 .main_content {
-	margin: 0 auto;
+	margin-top: 100px;
 	background-color: white;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }
 .main_content_body {
 	background-color: white;
-	max-height: 80%
+	max-height: 80%;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
-
 .baby_pic_set {
-	margin-left: 2%;
-	width: 500px;
+	width: 100%;
+}
+.main_content_life_easier p {
+	font-family: "Neuton", sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	padding: 5px;
+	color: #75BE1B;
+}
+.main_content_buy_sell p	{
+	font-family: sans-serif;
+	font-size: 1.2em;
+	padding: 5px 0 5px 15px;
+	color: #75CBD2;
+	display: inline-block;
+}
+.main_content_buy_sell:before {
+	content: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/owls/owl_bright_blue_64.png);
+}
+.shop_now_img{
+	margin: 0 auto;
+}
+.tree_image {
+	float: right;
+	margin-top: 25%;
+}
+.ui.grid {
+	margin-top: 0;
+}
+.eight.wide.column {
+	padding: 0;
+}
+.baby_pic_set img {
+	display: block;
+	margin: 0 auto 5px auto;
 }
 
 /* body footer styling */
@@ -113,10 +170,14 @@ h2 {
 	color: white;
 	list-style-type: none;
 	padding: 5px 10px;
+	margin: 10px 0 0 0;
 	text-shadow: 0 1px lightgrey;
 }
 .sub_content_footer ul {
 	text-align: center;
+	margin: 0;
+	padding: 30px 0 0 0;
+	background-color: #75CBD2;
 }
 .sub_content_footer ul li:not(.foo) {
 	border-right: 1px solid white;
@@ -124,6 +185,3 @@ h2 {
 .sub_content_footer ul li:hover {
 	color: black;
 }
-
-
-
