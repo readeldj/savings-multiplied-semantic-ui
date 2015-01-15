@@ -3,6 +3,10 @@
 html {
 	background-color: #75CBD2;
 }
+ body {
+ 	font-family: "Neuton", serif;
+ }
+
 .twelve.column.row {
 	margin: 0;
 	padding: 0;
@@ -25,7 +29,7 @@ html {
 
 #sign-in {
 	float: right;
-	margin-top: -40px;
+	margin-top: -30px;
 	margin-right: 30px;
 }
 
@@ -46,8 +50,8 @@ html {
 .button-container {
 	position: relative;
 	top: 62px;
-	right: 49px;
-	margin-left: 55%;
+	right: -34px;
+	margin-left: 45%;
 	padding-bottom: 0%;
 }
 
@@ -66,22 +70,56 @@ html {
 
 /* nav bar styling */
 
-.menu {
+.sixteen.wide.column {
 	font-color: white;
-	background-color: pink;
-	height: 50px;
+	background-color: #f5cbd3;
+	padding: 0;
+	margin: 0;
 }
 
-/* body/content  styling */
+.middle_nav_menu {
+	margin-left: 10%;
+	background-color: #f5cbd3;
+	padding: 0;
+	a {
+		display: inline-block;
+		color: #681f41;
+		font-family: "Neuton";
+		padding: 0 5px;
+
+	}
+}
+
+
+h2 {
+	margin: 0px 0.5em;
+	padding: 0;
+	font-family: "Neuton", sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.ui.icon.input {
+	border-radius: 40%;
+	padding-bottom: 20px;
+	margin-top:	12px;
+
+}
+
+
+/* body level styling */
+
 .main_content {
-	margin-top: 100px;
+	margin-top: 50px;
 	background-color: white;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 }
 .main_content_body {
 	background-color: white;
-	max-height: 80%
+	max-height: 80%;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
 .baby_pic_set {
 	width: 100%;
@@ -143,7 +181,8 @@ html {
 }
 .sub_content_footer ul {
 	text-align: center;
-	margin-top: 20px;
+	margin: 0;
+	padding: 30px 0 0 0;
 	background-color: #75CBD2;
 }
 .sub_content_footer ul li:not(.foo) {
