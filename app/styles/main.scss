@@ -3,6 +3,10 @@
 .ui.grid {
 	background-color: #d6f1f0;
 }
+ body {
+ 	font-family: "Neuton", serif;
+ }
+
 .twelve.column.row {
 	margin: 0;
 	padding: 0;
@@ -40,11 +44,42 @@
 
 /* nav bar styling */
 
-.menu {
+.sixteen.wide.column {
 	font-color: white;
-	background-color: pink;
-	height: 50px;
+	background-color: #f5cbd3;
+	padding: 0;
+	margin: 0;
 }
+
+.middle_nav_menu {
+	margin-left: 10%;
+	background-color: #f5cbd3;
+	padding: 0;
+	a {
+		display: inline-block;
+		color: #681f41;
+		font-family: "Neuton";
+		padding: 0 5px;
+
+	}
+}
+
+
+h2 {
+	margin: 0px 0.5em;
+	padding: 0;
+	font-family: "Neuton", sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.ui.icon.input {
+	border-radius: 40%;
+	padding-bottom: 20px;
+	margin-top:	12px;
+
+}
+
 
 /* body level styling */
 .main_content {

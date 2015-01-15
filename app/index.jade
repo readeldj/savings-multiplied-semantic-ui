@@ -7,12 +7,13 @@ html(lang="en-US")
     title My Title
     link(rel="stylesheet" href="vendor/semantic/dist/semantic.min.css")
     link(rel="stylesheet" href="css/main.css")
+    link(href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,800' rel='stylesheet' type='text/css')
   body
     div(class="ui grid")
       div(class="twelve column row") 
         div(class="two wide column")      
         div(class="twelve wide column") 
-          div(class="main_content group")
+          .main_content.group
             div(class="button-container")
               div(class="ui black button")
               div(class="ui yellow button")
@@ -24,20 +25,28 @@ html(lang="en-US")
             img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png")(class="tagline")
         div(class="two wide column")
     
-      div(class="ui inverted pink vertical segment")
-          div(class="ui inverted pink menu")
-            a.item Buy
-            a.item Sell
-            a.item How It Works
-            a.item Links
-            a.item Community
+      div(class="sixteen wide column")      
+
+          div(class="middle_nav_menu")
+            
+            a.item 
+              h2 Buy
+            a.item 
+              h2 Sell
+            a.item 
+              h2 How It Works
+            a.item 
+              h2 Links
+            a.item 
+              h2 Community
             div(class="ui icon input")
-              input(type="text")
+              input(type="text" placeholder="Search")
       
       div(class="twelve column row")
         div(class="two wide column")
         div(class="twelve wide column")     
           div.main_content_body
+
             div.main_content_text
               p We're making one aspect of life easier for parents of multiples
               p Buying and selling gently used sets of clothes
