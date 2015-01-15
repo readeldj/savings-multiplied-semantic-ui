@@ -1,12 +1,19 @@
-
 /* top level styling */
-.ui.grid {
-	background-color: #d6f1f0;
+
+html {
+	background-color: #75CBD2;
 }
 .twelve.column.row {
 	margin: 0;
 	padding: 0;
 }
+.twelve.column.row.top_row {
+	background-color: #D3EFEE;
+}
+.twelve.column.row.middle_row {
+	background-color: #75CBD2;
+}
+
 /* header level styling */
 .logo {
 	width: 40%;
@@ -78,10 +85,13 @@
 	color: white;
 	list-style-type: none;
 	padding: 5px 10px;
+	margin: 10px 0 0 0;
 	text-shadow: 0 1px lightgrey;
 }
 .sub_content_footer ul {
 	text-align: center;
+	margin-top: 20px;
+	background-color: #75CBD2;
 }
 .sub_content_footer ul li:not(.foo) {
 	border-right: 1px solid white;
@@ -89,6 +99,3 @@
 .sub_content_footer ul li:hover {
 	color: black;
 }
-
-
-
