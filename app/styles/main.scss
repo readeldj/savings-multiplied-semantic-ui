@@ -26,10 +26,49 @@
 	border-radius: 35%;
 }
 
+.menu {
+	font-color: white;
+	background-color: pink;
+}
+
+.main_content {
+	margin: 0 auto;
+	background-color: white;
+}
+
+.baby_pic_set {
+	margin-left: 2%;
+	height: 800px;
+	width: 500px;
+}
+.main_content_footer {
+	padding-left: 5%;
+}
+.main_content_footer-img img{
+	display: inline-block;
+	margin-left: 20px;
+	padding: 5px 10px;
+}
+.sub_content_footer ul li {
+	display: inline;
+	color: white;
+	list-style-type: none;
+	padding: 5px 10px;
+	text-shadow: 0 1px lightgrey;
+}
+.sub_content_footer ul {
+	text-align: center;
+}
+.sub_content_footer ul li:not(.foo) {
+	border-right: 1px solid white;
+}
+.sub_content_footer ul li:hover {
+	color: black;
+}
+
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-Delete me.
