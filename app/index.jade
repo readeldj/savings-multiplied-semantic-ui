@@ -5,9 +5,8 @@ html(lang="en-US")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title My Title
-    link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="vendor/semantic/dist/semantic.min.css")
-
+    link(rel="stylesheet" href="css/main.css")
   body
     div(class="ui grid")
       div(class="twelve column row") 
@@ -23,8 +22,9 @@ html(lang="en-US")
             img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/owls/savings-multiplied-logo-WEB.png")(class="logo")
 
             img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png")(class="tagline")
-
-    div(class="ui inverted pink vertical segment")
+        div(class="two wide column")
+    
+      div(class="ui inverted pink vertical segment")
           div(class="ui inverted pink menu")
             a.item Buy
             a.item Sell
@@ -33,7 +33,9 @@ html(lang="en-US")
             a.item Community
             div(class="ui icon input")
               input(type="text")
+      
       div(class="twelve column row")
+        div(class="two wide column")
         div(class="twelve wide column")     
           div.main_content_body
             div.main_content_text
@@ -49,6 +51,7 @@ html(lang="en-US")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/twitter_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png")
+        div(class="two wide column") 
 div.sub_content_footer
   ul
     li link here

@@ -1,10 +1,22 @@
+
+/* top level styling */
 .ui.grid {
 	background-color: #d6f1f0;
 }
-
+.twelve.column.row {
+	margin: 0;
+	padding: 0;
+}
+/* header level styling */
 .logo {
 	width: 40%;
 	float: left;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .tagline {
@@ -26,21 +38,30 @@
 	border-radius: 35%;
 }
 
+/* nav bar styling */
+
 .menu {
 	font-color: white;
 	background-color: pink;
+	height: 50px;
 }
 
+/* body level styling */
 .main_content {
 	margin: 0 auto;
 	background-color: white;
 }
+.main_content_body {
+	background-color: white;
+	max-height: 80%
+}
 
 .baby_pic_set {
 	margin-left: 2%;
-	height: 800px;
 	width: 500px;
 }
+
+/* body footer styling */
 .main_content_footer {
 	padding-left: 5%;
 }
@@ -49,6 +70,9 @@
 	margin-left: 20px;
 	padding: 5px 10px;
 }
+
+/* sub_content_footer styling */
+
 .sub_content_footer ul li {
 	display: inline;
 	color: white;
@@ -66,9 +90,5 @@
 	color: black;
 }
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
