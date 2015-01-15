@@ -16,8 +16,10 @@ html {
 
 /* header level styling */
 .logo {
+	position: relative;
+	top: -4px;
+	left: 0;
 	width: 40%;
-	// float: left;
 	margin-top: -6%;
 }
 
@@ -28,13 +30,19 @@ html {
 }
 
 .tagline {
+	position: relative;
+	left: 16px;
+	bottom: 0px;
 	width: 50%;
-	padding-bottom: 6.5%;
+	padding-bottom: 3%;
 }
 
 .button-container {
+	position: relative;
+	top: 62px;
+	right: 49px;
 	margin-left: 55%;
-	padding-bottom: 5%;
+	padding-bottom: 0%;
 }
 
 .ui.teal.button,
@@ -45,6 +53,9 @@ html {
 	margin-bottom: -23%;
 	padding-left: 10%;
 	border-radius: 20px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* nav bar styling */
