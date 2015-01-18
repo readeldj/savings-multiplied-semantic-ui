@@ -9,32 +9,25 @@ html(lang="en-US")
     link(rel="stylesheet" href="css/main.css")
     link(href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,800' rel='stylesheet' type='text/css')
   body
-    
-    div(class="ui grid")
-      div(class="twelve column row top_row") 
-        div(class="two wide column")      
-        div(class="twelve wide column") 
-          div(class="main_content group")
+    .ui.grid.two.column.stackable
+      .twelve.column.row.top_row
+        .two.wide.column      
+        .twelve.wide.column
+          .main_content.group
             div(class="ui breadcrumb" id="sign-in")
-              a(class="section") sign in
+              a.section sign in
               .divider | 
-              a(class="section") sign up
-          
-            div(class="button-container")
-              a(class="ui teal button") About
-              a(class="ui green button") Contact
-              a(class="ui purple button") Blog
-              a(class="ui pink button") Press
-
+              a.section sign up
+            .button-container
+              a.ui.teal.button About
+              a.ui.green.button Contact
+              a.ui.purple.button Blog
+              a.ui.pink.button Press
             img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png")(class="logo")
-
             img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png")(class="tagline")
-        div(class="two wide column")
-    
-      div(class="sixteen wide column")      
-
-          div(class="middle_nav_menu")
-            
+        .two.wide.column
+      .sixteen.wide.column    
+          .middle_nav_menu
             a.item 
               h2 Buy
             a.item 
@@ -45,48 +38,43 @@ html(lang="en-US")
               h2 Links
             a.item 
               h2 Community
-            div(class="ui icon input")
+            .ui.icon.input
               input(type="text" placeholder="Search")
-      
-      div(class="twelve column row middle_row")
-        div(class="two wide column")
-        div(class="twelve wide column")     
-
-          div(class="main_content_body")
-            div(class="ui grid")
-              div(class="eight wide column")
-                div(class="content_text_blurbs")
-                div(class="main_content_life_easier")
+      .twelve.column.row.middle_row
+        .two.wide.column
+        .twelve.wide.column    
+          .main_content_body
+            .ui.grid.two.column.stackable
+              .eight.wide.column
+                .content_text_blurbs.
+                .main_content_life_easier
                   p We're making one aspect of life easier for parents of multiples
-                div(class="main_content_buy_sell")
+                .main_content_buy_sell
                   p Buying and selling gently used sets of clothes!
-                div(class="shop_now_img")
+                .shop_now_img
                   img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/left_2_shop_now.png")
-                div(class="tree_image")
+                .tree_image
                   img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png")
-              div(class="eight wide column")
-                div.baby_pic_set
+              .eight.wide.column
+                .baby_pic_set
                   img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/twins.jpg")
                   img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/triplets.jpg")
                   img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/28713899e79e544ac5d26ec289726e0bee1f2045/app/assets/images/children/quads.jpg")
-
-            div.main_content_footer
-              div.main_content_footer-img
+            .main_content_footer
+              .main_content_footer-img
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/facebook_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/twitter_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png")
-        div(class="two wide column") 
-div.sub_content_footer
+       .two.wide.column
+.sub_content_footer
   ul
     li link here
     li link here
     li link here
     li link here
     li link here
-    li(class="foo") link here
-        div(class="two wide column")
-
-          
+    li.foo link here
+        .two.wide.column
 script(src="js/main.js")
 script(src="/dist/semantic.min.js")
