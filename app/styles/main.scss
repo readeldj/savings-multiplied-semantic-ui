@@ -74,6 +74,7 @@ html {
 .sixteen.wide.column {
 	font-color: white;
 	background-color: #f5cbd3;
+	max-width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -166,8 +167,9 @@ h2 {
 }
 .main_content_footer-img img{
 	display: inline-block;
-	margin-left: 20px;
-	padding: 5px 10px;
+	max-width: 25%;
+	height: auto;
+	padding: 1% 3%;
 }
 
 /* sub_content_footer styling */
@@ -176,21 +178,21 @@ h2 {
 	display: inline;
 	color: white;
 	list-style-type: none;
-	padding: 5px 10px;
+	padding: 5px 5px;
 	margin: 10px 0 0 0;
 	text-shadow: 0 1px lightgrey;
 }
 .sub_content_footer ul {
 	text-align: center;
 	margin: 0;
-	padding: 30px 0 0 0;
+	padding: 20px 0 0 0;
 	background-color: #75CBD2;
 }
 .sub_content_footer ul li:not(.foo) {
 	border-right: 1px solid white;
 }
 .sub_content_footer ul li:hover {
-	color: black;
+	color: lightgrey;
 }
 
 
