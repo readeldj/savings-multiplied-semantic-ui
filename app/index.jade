@@ -14,7 +14,7 @@ html(lang="en-US")
         .two.wide.column     
         .twelve.wide.column 
           .main_content.group
-            div(class="ui breadcrumb" id="sign-in")
+            .ui.breadcrumb(id="sign-in")
               a.section sign in
               .divider | 
               a.section sign up
@@ -39,7 +39,10 @@ html(lang="en-US")
             a.item 
               h2 Community
             .ui.icon.input
-              input(type="text" placeholder="Search")
+              input(
+                type="text"
+                placeholder="Search"
+              )
       .twelve.column.row.middle_row
         .two.wide.column
         .twelve.wide.column     
@@ -67,14 +70,14 @@ html(lang="en-US")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png")
        .two.wide.column
-.sub_content_footer
-  ul
-    li link here
-    li link here
-    li link here
-    li link here
-    li link here
-    li.foo link here
+  .sub_content_footer
+    ul
+     li link here
+      li link here
+      li link here
+      li link here
+      li link here
+      li.foo link here
         .two.wide.column
-script(src="js/main.js")
-script(src="/dist/semantic.min.js")
+  script(src="js/main.js")
+  script(src="/dist/semantic.min.js")
