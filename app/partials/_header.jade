@@ -1,33 +1,36 @@
-//- includes/_header.jade
-
 .ui.grid.two.column.stackable
-      .twelve.column.row.top_row
-        .two.wide.column     
-        .twelve.wide.column 
-          .main_content.group
-            div(class="ui breadcrumb" id="sign-in")
-              a.section sign in
-              .divider | 
-              a.section sign up
-            .button-container
-              a.ui.teal.button About
-              a.ui.green.button Contact
-              a.ui.purple.button Blog
-              a.ui.pink.button Press
-            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png")(class="logo")
-            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png")(class="tagline")
-        .sixteen.wide.column    
-          .middle_nav_menu
-            a.item 
-              h2 Buy
-            a.item 
-              h2 Sell
-            a.item 
-              h2 How It Works
-            a.item 
-              h2 Links
-            a.item 
-              h2 Community
-            .ui.icon.input
-              input(type="text" placeholder="Search")
+  .twelve.column.row.top_row
+    .two.wide.column     
+    .twelve.wide.column 
+      .main_content.group
+        div(class="ui breadcrumb" id="sign-in")
+          a.section sign in
+          .divider | 
+          a.section sign up
+      .ui.grid.two.column.stackable.white   
+        .column.logo
+          img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png")
+        .column.button-container
+          a.ui.teal.button About
+          a.ui.green.button Contact
+          a.ui.purple.button Blog
+          a.ui.pink.button Press
+          .column.tagline
+            img.ui.centered.image(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png")(class="tagline") 
+    .sixteen.wide.column    
+      .middle_nav_menu
+        a.item 
+          h2 Buy
+        a.item 
+          h2 Sell
+        a.item 
+          h2 How It Works
+        a.item 
+          h2 Links
+        a.item 
+          h2 Community
+        .ui.icon.input
+          input(type="text" placeholder="Search")
+
+
 

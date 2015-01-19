@@ -19,15 +19,25 @@ html {
 	background-color: #75CBD2;
 }
 
+.sixteen.wide.column {
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
 
 /* header level styling */
 .logo {
 	position: relative;
 	top: -4px;
 	left: 0;
-	width: 40%;
 	margin-top: -6%;
 	padding-top: 20px;
+}
+
+.logo img {
+	max-width: 100%;
+	height: auto;
 }
 
 #sign-in {
@@ -43,21 +53,33 @@ html {
 }
 
 .tagline {
-	position: absolute;
-	left: 45%;
-	bottom: 15%;
-	width: 50%;
+	position: relative;
+	margin-top: 2%;
+	padding-left: 5px;
+}
+
+.tagline img {
+	max-width: 80%;
+	height: auto;
 }
 
 .button-container {
-	position: absolute;
 	display: table;
+	margin-top: 2%;
 	width: 40%;
 	top: 50%;
-	left: 50%;
 }
 
-.ui.teal.button,
+.ui.teal.button {
+	margin-left: 10px;
+	font-size: .9rem;
+	display: inline-block;
+	text-align: center;
+	border-radius: 20px;
+	padding: 2% 3% 2% 3%;
+	width: 23%;
+}
+
 .ui.green.button,
 .ui.purple.button,
 .ui.pink.button {
@@ -85,7 +107,7 @@ html {
 	a {
 		display: inline-block;
 		color: #681f41;
-		padding: 0 2%;
+		padding: 1% 2%;
 	}
 }
 
@@ -94,7 +116,7 @@ h2 {
 	padding: 0;
 	font-family: "Neuton", sans-serif;
 	font-weight: 400;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 .ui.icon.input {
@@ -105,6 +127,16 @@ h2 {
 /* body level styling */
 
 .main_content {
+	padding-top: 10%;
+}
+
+.ui.grid.two.column.stackable.white {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+
+.white {
 	margin-top: 50px;
 	background-color: white;
 	max-width: 100%;
@@ -112,6 +144,7 @@ h2 {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 }
+
 .main_content_body {
 	background-color: white;
 	max-height: 80%;
@@ -146,16 +179,18 @@ h2 {
 	max-width: 100%;
 	height: auto;
 }
-.tree_image {
+
+.tree_image img {
 	float: right;
-	margin-top: 25%;
-}
+	margin-top: 15%;
+	max-width: 50%;
+	height: auto;
+}	
+
 .ui.grid {
 	margin-top: 0;
 }
-.eight.wide.column {
-	padding: 0;
-}
+
 .baby_pic_set img {
 	display: block;
 	margin: 0 auto 5px auto;
@@ -193,6 +228,12 @@ h2 {
 }
 .sub_content_footer ul li:hover {
 	color: lightgrey;
+}
+
+@media screen and (max-width: 481px) {
+	.hide {
+		display: none;
+	}
 }
 
 
