@@ -1,9 +1,13 @@
 doctype html
+
 html(lang="en-US")
+
   head
-    include ./includes/_head.jade
+    include ./partials/_head.jade
+
   body
-    include ./includes/_header.jade
+    include ./partials/_header.jade
+    .ui.grid.two.column.stackable
       .twelve.column.row.middle_row
         .two.wide.column
         .twelve.wide.column     
@@ -14,10 +18,10 @@ html(lang="en-US")
                 .main_content_life_easier
                   p We're making one aspect of life easier for parents of multiples
                 .main_content_buy_sell
-                  p Buying and selling gently used sets of clothes!
+                  p Buying and selling gently used sets of clothes! 
                 .ui.centered.image.shop_now_img
-                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/left_2_shop_now.png")
-                .ui.small.image.tree_image
+                  img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/left_2_shop_now.png") 
+                .tree_image.hide
                   img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png")
               .eight.wide.column
                 .ui.large.image.baby_pic_set.column
@@ -30,7 +34,8 @@ html(lang="en-US")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/twitter_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png")
-       include ./includes/_footer.jade
+  include ./partials/_footer.jade
+
 script(src="js/main.js")
 script(src="/dist/semantic.min.js")
 
