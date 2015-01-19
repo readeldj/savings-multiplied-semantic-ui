@@ -1,48 +1,9 @@
 doctype html
 html(lang="en-US")
   head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title My Title
-    link(rel="stylesheet" href="vendor/semantic/dist/semantic.min.css")
-    link(rel="stylesheet" href="css/main.css")
-    link(href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,800' rel='stylesheet' type='text/css')
+    include ./includes/_head.jade
   body
-    .ui.grid.two.column.stackable
-      .twelve.column.row.top_row
-        .two.wide.column     
-        .twelve.wide.column 
-          .main_content.group
-            .ui.breadcrumb(id="sign-in")
-              a.section sign in
-              .divider | 
-              a.section sign up
-            .button-container
-              a.ui.teal.button About
-              a.ui.green.button Contact
-              a.ui.purple.button Blog
-              a.ui.pink.button Press
-            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png")(class="logo")
-            img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png")(class="tagline")
-        .two.wide.column
-      .sixteen.wide.column    
-          .middle_nav_menu
-            a.item 
-              h2 Buy
-            a.item 
-              h2 Sell
-            a.item 
-              h2 How It Works
-            a.item 
-              h2 Links
-            a.item 
-              h2 Community
-            .ui.icon.input
-              input(
-                type="text"
-                placeholder="Search"
-              )
+    include ./includes/_header.jade
       .twelve.column.row.middle_row
         .two.wide.column
         .twelve.wide.column     
@@ -69,15 +30,7 @@ html(lang="en-US")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/twitter_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png")
                 img(src="https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png")
-       .two.wide.column
-  .sub_content_footer
-    ul
-     li link here
-      li link here
-      li link here
-      li link here
-      li link here
-      li.foo link here
-        .two.wide.column
-  script(src="js/main.js")
-  script(src="/dist/semantic.min.js")
+       include ./includes/_footer.jade
+script(src="js/main.js")
+script(src="/dist/semantic.min.js")
+
