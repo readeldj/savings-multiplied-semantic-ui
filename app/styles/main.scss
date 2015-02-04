@@ -5,6 +5,7 @@ html {
 }
  body {
  	font-family: "Neuton", serif;
+  background-color: #75CBD2;
  }
 
 .twelve.column.row {
@@ -229,6 +230,15 @@ h2 {
 .sub_content_footer ul li:hover {
 	color: lightgrey;
 }
+
+.search-container {
+  background-color: white;
+  width: 75%;
+  height: 80%;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+}
+
 
 @media screen and (max-width: 481px) {
 	.hide {
