@@ -13,8 +13,10 @@ html(lang="en-US")
         .twelve.wide.column
           .main_content_body
             .ui.grid.two.column.stackable
-              .five.wide.column
-                include ./partials/_searchLeft.jade
+              .six.wide.column
+                ..wide.column
+                  include ./partials/_searchLeft.jade
+                .three.wide.column
               .eleven.wide.column
                 include ./partials/_searchright.jade
     include ./partials/_footer.jade
