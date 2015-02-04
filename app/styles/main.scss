@@ -271,20 +271,16 @@ h2 {
 .sort-results {
 
   li {
+
+    list-style: none;
     display: inline-block;
-    width: 150px;
-    padding: 2px 5px;
-    text-align: center;
+    margin: 5px;
+    border: 1px solid #8AB83A;
+    border-radius: 20px;
+    padding: 7px;
 
-    .green-container {
-      width: 100px;
-      height: 100px;
-      background-color: #EDF9D3;
-      margin: 0 auto;
-    }
-
-    p {
-      margin: 2px 10px;
+    .images {
+      width: 120px;
     }
   }
 }
