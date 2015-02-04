@@ -8,6 +8,8 @@
   });
 
   function createList(data) {
+    var endDateFormatted = moment(data.endDate);
+    console.log(endDateFormatted);
     var $li = $('<li></li>');
       var $pic = $('<img class="images" src='+data.image+'></img>');
       var $title = $('<h6>'+data.title+'</h6>');
