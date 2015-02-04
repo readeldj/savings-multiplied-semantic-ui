@@ -1,0 +1,80 @@
+.filter-container
+  h6 Limit your search by:
+  input(type="text")
+  button.button-primary.green Search
+  .row.condition-container
+    .five.columns
+      p Condition:
+    .seven.columns.condition-labels  
+      p
+        <input type="radio" name="condition" id="new" value="new"/> 
+        label(for="new") New
+      p
+        <input type="radio" name="condition" id="gently_used" value="gently_used"/>
+        label(for="gently_used") Gently Used
+   p.size-header Size:
+  .row.size-container
+    .five.columns
+      p
+        <input type="radio" name="size" id="4"/>
+        label(for="4") 4
+      p
+        <input type="radio" name="size" id="5"/>
+        label(for="5") 5
+      p
+        <input type="radio" name="size" id="6"/>
+        label(for="6") 6
+      p
+        <input type="radio" name="size" id="7"/>
+        label(for="7") 7
+      
+    .seven.columns
+      p
+        <input type="radio" name="size" id="8"/>
+        label(for="8") 8
+      p
+        <input type="radio" name="size" id="9"/>
+        label(for="9") 9
+      p
+        <input type="radio" name="size" id="10"/>
+        label(for="10") 10
+      p
+        <input type="radio" name="size" id="11"/>
+        label(for="11") 11
+
+            .season-container
+              p Season:
+              p
+                <input type="radio" name="seasons" id="all"/>
+                label(for="all") All Seasons
+              p
+                <input type="radio" name="seasons" id="spring"/>
+                label(for="spring") Spring
+              p
+                <input type="radio" name="seasons" id="summer"/>
+                label(for="summer") Summer
+              p
+                <input type="radio" name="seasons" id="fall"/>
+                label(for="fall") Fall
+              p
+                <input type="radio" name="seasons" id="winter"/>
+                label(for="winter") Winter
+            .type-container
+              p Type:
+              p
+                <input type="radio" name="type" id="any"/>
+                label(for="any") Any
+              p
+                <input type="radio" name="type" id="one-piece"/>
+                label(for="one-piece") One-piece
+              p
+                <input type="radio" name="type" id="tops"/>
+                label(for="tops") Tops
+              p
+                <input type="radio" name="typp" id="bottoms"/>
+                label(for="bottoms") Bottoms
+            .brand-container
+              p Brand:
+              select
+                option Jane and Jack
+                option Other option
