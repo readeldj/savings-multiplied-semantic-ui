@@ -3,16 +3,27 @@ doctype html
 html(lang="en-US")
 
   head
-    link(rel="stylesheet" href="css/search.css")
+    link(rel="stylesheet" href="css/main.css")
     include ./partials/_head.jade
+
   body
     include ./partials/_header.jade
-  .search-container
-    include ./partials/_searchLeft.jade
-    include ./partials/_searchright.jade
-  include ./partials/_footer.jade
+    .ui.grid.two.column.stackable
+      .twelve.column.row.middle_row
+        .two.wide.column
+        .twelve.wide.column
+          .main_content_body
+            .ui.grid.two.column.stackable
+              .five.wide.column
+                include ./partials/_searchLeft.jade
+              .eleven.wide.column
+                include ./partials/_searchright.jade
+    include ./partials/_footer.jade
 
+script(src="/vendor/jquery/dist/jquery.min.js")
+script(src="/vendor/lodash/lodash.min.js")
+script(src="/vendor/moment/moment.js")
 script(src="js/main.js")
-script(src="/dist/semantic.min.js")
+script(src="/vendor/semantic/dist/semantic.min.js")
 
 
