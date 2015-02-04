@@ -1,5 +1,7 @@
 ###This project contains a mockup layout of savings-multiplied created with Semantic.ui
 #####Authors: Jason Gresalfi, Jacob Lewis, Ayumi Bennett
+
+[![Join the chat at https://gitter.im/readeldj/savings-multiplied-semantic-ui](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/readeldj/savings-multiplied-semantic-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *************
 
 The goal of the project is to replicate the home page of Eliza Brock's site, [Savings Multiplied](https://github.com/elizabrock/SavingsMultipliedRedux/blob/master/doc/Screen%20Shot%202014-05-15%20at%2011.49.33%20AM.png). 
