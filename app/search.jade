@@ -3,6 +3,7 @@ doctype html
 html(lang="en-US")
 
   head
+    link(rel="stylesheet" href="css/main.css")
     include ./partials/_head.jade
 
   body
@@ -21,7 +22,10 @@ html(lang="en-US")
                 include ./partials/_searchright.jade
     include ./partials/_footer.jade
 
+script(src="/vendor/jquery/dist/jquery.min.js")
+script(src="/vendor/lodash/lodash.min.js")
+script(src="/vendor/moment/moment.js")
 script(src="js/main.js")
-script(src="/dist/semantic.min.js")
+script(src="/vendor/semantic/dist/semantic.min.js")
 
 
