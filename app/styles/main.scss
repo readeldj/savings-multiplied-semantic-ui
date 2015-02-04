@@ -270,17 +270,33 @@ h2 {
 
 .sort-results {
 
-  li {
+  .sortresults-list {
 
-    list-style: none;
-    display: inline-block;
-    margin: 5px;
-    border: 1px solid #8AB83A;
-    border-radius: 20px;
-    padding: 7px;
+    margin-left: 0;
+    padding-left: 0;
+    
+    li {
 
-    .images {
-      width: 120px;
+      list-style: none;
+      display: inline-block;
+      margin: 5px;
+      border: 1px solid #8AB83A;
+      border-radius: 20px;
+      padding: 7px;
+      text-align: center;
+      width: 135px;
+      
+      h6 {
+        font-size: 1.15em;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+
+      .images {
+        width: 80%;
+      }
+
     }
+
   }
 }
