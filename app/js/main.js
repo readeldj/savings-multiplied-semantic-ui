@@ -6,22 +6,26 @@
     _.forEach(res, function(item){
       itemArray.push(item);
     });
+
     sort(itemArray, 'price');
 
   });
 
   function sort(array, searchCriteria){
-    var sortedItemArray = _.sortBy(itemArray, function(n){
-    return n.searchCriteria;
-    console.log(n.searchCriteria);
-    });
-    //console.log(sortedItemArray);
+    var sortedItemArray = _.sortBy(itemArray, searchCriteria);
     _.forEach(sortedItemArray, function(item){
       createList(item);
-
     });
-
   };
+
+  var $select = $('#searchFilter');
+  $select.change(function(){
+    var $ul = $('#searchResultsList');
+    var selectedOption = $select.find(':selected').text();
+    console.log(selectedOption);
+    $ul.empty();
+    sort(itemArray, selectedOption);
+  });
 
 
   function createList(data) {
@@ -47,4 +51,6 @@
   }
 
 }());
+
+
 
