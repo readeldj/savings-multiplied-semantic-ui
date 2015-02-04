@@ -1,21 +1,41 @@
 (function(){
   'use strict';
-  var url = 'https://savingsmultipliedssh.firebaseio.com/items.json'
+  var url = 'https://savingsmultipliedssh.firebaseio.com/items.json';
+  var itemArray = [];
   $.get(url, function(res){
     _.forEach(res, function(item){
-        createList(item);
+      itemArray.push(item);
     });
+    sort(itemArray, 'price');
+
   });
 
+  function sort(array, searchCriteria){
+    var sortedItemArray = _.sortBy(itemArray, function(n){
+    return n.searchCriteria;
+    console.log(n.searchCriteria);
+    });
+    //console.log(sortedItemArray);
+    _.forEach(sortedItemArray, function(item){
+      createList(item);
+
+    });
+
+  };
+
+
   function createList(data) {
-    var endDateFormatted = moment(data.endDate);
-    console.log(endDateFormatted);
+    var endDateFormatted = moment().format(data.endDate);
+    var now = moment();
+    var timeLeft = moment(endDateFormatted).from(now);
+    //console.log(endDateFormatted);
+    //console.log(timeLeft);
     var $li = $('<li></li>');
       var $pic = $('<img class="images" src='+data.image+'></img>');
       var $title = $('<h6>'+data.title+'</h6>');
       var $seller = $('<p>'+data.seller+'</p>');
-      var $price = $('<p>'+data.price+'</p>');
-      var $endDate = $('<p>'+data.endDate+'</p>');
+      var $price = $('<p>'+'$'+data.price.toFixed(2)+'</p>');
+      var $endDate = $('<p>'+timeLeft+'</p>');
     $li.append($pic);
     $li.append($title);
     $li.append($seller);
