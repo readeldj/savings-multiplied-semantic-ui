@@ -239,7 +239,22 @@ h2 {
 
 /////search page style
 //
-//
+//left side 2nd page
+
+body {
+ color: #4A6D1A
+}
+
+
+h6 {
+ text-align: center;
+ font-size: 15px;
+ margin-top: 10px;
+ margin-bottom: 15px;
+ padding: 0px;
+ text-decoration: underline;
+}
+
 .filter-container{
   background-color: lighten(#8AB83A, 40%);
   border-radius: 30px;
@@ -247,6 +262,59 @@ h2 {
   padding: 5% 0 15% 5% ;
 }
 
+.condition{
+  float: left;
+  margin-top: 20px;
+}
+
+.condition-container{
+  float: right;
+  margin-top: 20px;
+  margin-right: 63px;
+}
+
+.size{
+  margin-bottom: 0px;
+  padding-top: 80px;
+}
+
+.season{
+  margin-top: 130px;
+}
+
+.type{
+  margin-top: 180px;
+}
+
+.brand{
+  margin-top: 160px;
+}
+
+.four-bullit{
+  float: left;
+  margin-left: 30px;
+}
+
+.seven-bullit{
+   float: right;
+   margin-right: 120px;
+}
+
+.season-container{
+  float: left;
+  margin-left: 30px;
+}
+
+.type-container{
+  float: left;
+  margin-left: 30px;
+}
+
+.selectBrand {
+  width: 90%
+}
+
+///right side 2nd page
 .sort-container {
   display: inline-block;
 
@@ -274,7 +342,7 @@ h2 {
 
     margin-left: 0;
     padding-left: 0;
-    
+
     li {
 
       list-style: none;
@@ -285,7 +353,7 @@ h2 {
       padding: 7px;
       text-align: center;
       width: 135px;
-      
+
       h6 {
         font-size: 1.15em;
         margin: 0;
