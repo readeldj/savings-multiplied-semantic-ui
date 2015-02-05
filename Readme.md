@@ -1,5 +1,7 @@
 ###This project contains a mockup layout of savings-multiplied created with Semantic.ui
 #####Authors: Jason Gresalfi, Jacob Lewis, Ayumi Bennett
+
+[![Join the chat at https://gitter.im/readeldj/savings-multiplied-semantic-ui](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/readeldj/savings-multiplied-semantic-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *************
 
 ### Version 3
