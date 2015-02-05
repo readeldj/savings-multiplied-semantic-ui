@@ -21,10 +21,10 @@
   var $select = $('#searchFilter');
   $select.change(function(){
     var $ul = $('#searchResultsList');
-    function selectedOption(){ 
+    function selectedOption(){
       if($select.find(':selected').text() === 'End Date') {
         return 'endDate';
-      } else { return price}
+      } else { return 'price'}
     }
     console.log(selectedOption);
     $ul.empty();
@@ -49,7 +49,6 @@
     $li.append($seller);
     $li.append($price);
     $li.append($endDate);
-    
     var $searchResultsList = $('#searchResultsList');
     $searchResultsList.append($li);
   }
