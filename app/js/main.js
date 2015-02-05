@@ -21,10 +21,14 @@
   var $select = $('#searchFilter');
   $select.change(function(){
     var $ul = $('#searchResultsList');
-    var selectedOption = $select.find(':selected').text();
+    function selectedOption(){ 
+      if($select.find(':selected').text() === 'End Date') {
+        return 'endDate';
+      } else { return price}
+    }
     console.log(selectedOption);
     $ul.empty();
-    sort(itemArray, selectedOption);
+    sort(itemArray, selectedOption());
   });
 
 
@@ -51,6 +55,7 @@
   }
 
 }());
+
 
 
 
