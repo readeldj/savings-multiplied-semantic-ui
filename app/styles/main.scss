@@ -344,7 +344,6 @@ h6 {
     padding-left: 0;
 
     li {
-
       list-style: none;
       display: inline-block;
       margin: 5px;
@@ -359,9 +358,11 @@ h6 {
         margin: 0;
         margin-bottom: 5px;
       }
-
       .images {
-        width: 80%;
+        max-width: 120px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
       }
 
     }

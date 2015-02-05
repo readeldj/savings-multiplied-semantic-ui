@@ -6,22 +6,30 @@
     _.forEach(res, function(item){
       itemArray.push(item);
     });
+
     sort(itemArray, 'price');
 
   });
 
   function sort(array, searchCriteria){
-    var sortedItemArray = _.sortBy(itemArray, function(n){
-    return n.searchCriteria;
-    console.log(n.searchCriteria);
-    });
-    //console.log(sortedItemArray);
+    var sortedItemArray = _.sortBy(itemArray, searchCriteria);
     _.forEach(sortedItemArray, function(item){
       createList(item);
-
     });
-
   };
+
+  var $select = $('#searchFilter');
+  $select.change(function(){
+    var $ul = $('#searchResultsList');
+    function selectedOption(){
+      if($select.find(':selected').text() === 'End Date') {
+        return 'endDate';
+      } else { return 'price'}
+    }
+    console.log(selectedOption);
+    $ul.empty();
+    sort(itemArray, selectedOption());
+  });
 
 
   function createList(data) {
@@ -41,10 +49,12 @@
     $li.append($seller);
     $li.append($price);
     $li.append($endDate);
-    
     var $searchResultsList = $('#searchResultsList');
     $searchResultsList.append($li);
   }
 
 }());
+
+
+
 
